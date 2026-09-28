@@ -10,6 +10,10 @@ Wynik trafia do lokalnej bazy w postaci dużego pliku JSON.
 
 Domyślnym źródłem jest kategoria sprzedaży: <https://sprzedaz.pracuj.pl/praca>
 
+> 📖 **Pierwszy scraper?** Zacznij od [DOKUMENTACJA.md](DOKUMENTACJA.md) —
+> wyjaśnia krok po kroku, jak to wszystko działa: czym jest scraper, jak
+> dobrać selektory, co robi Cloudflare i dlaczego ten projekt tak wygląda.
+
 ---
 
 ## Szybki start
