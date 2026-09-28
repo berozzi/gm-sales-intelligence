@@ -1,0 +1,34 @@
+{
+  "name": "gm-sales-intelligence",
+  "version": "1.0.0",
+  "description": "Scraper job boardow (Playwright + TypeScript) - firma, stanowisko, zakres obowiazkow",
+  "main": "src/index.ts",
+  "engines": {
+    "node": ">=22.6.0"
+  },
+  "scripts": {
+    "scrape": "node src/cli.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "tsc --noEmit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/berozzi/gm-sales-intelligence.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/berozzi/gm-sales-intelligence/issues"
+  },
+  "homepage": "https://github.com/berozzi/gm-sales-intelligence#readme",
+  "dependencies": {
+    "playwright": "^1.63.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.63.0",
+    "@types/node": "^26.6.3",
+    "typescript": "^7.0.2"
+  }
+}

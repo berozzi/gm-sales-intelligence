@@ -1,0 +1,45 @@
+{
+  // Visit https://aka.ms/tsconfig to read more about this file
+  "compilerOptions": {
+    // File Layout
+    // Kod uruchamiamy wprost przez Node (natywne stripowanie typów),
+    // więc kompilujemy tylko do sprawdzenia typów.
+    "noEmit": true,
+    "allowImportingTsExtensions": true,
+
+    // Environment Settings
+    // See also https://aka.ms/tsconfig/module
+    "module": "nodenext",
+    "target": "esnext",
+    "types": ["node"],
+    // "dom" jest potrzebne, bo funkcje przekazywane do `page.evaluate`
+    // są wykonywane w przeglądarce i operują na DOM.
+    "lib": ["esnext", "dom"],
+
+    // Other Outputs
+    "sourceMap": true,
+    "declaration": true,
+    "declarationMap": true,
+
+    // Stricter Typechecking Options
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+    "noImplicitOverride": true,
+    "noFallthroughCasesInSwitch": true,
+
+    // Style Options
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    // "noPropertyAccessFromIndexSignature": true,
+
+    // Recommended Options
+    "strict": true,
+    "jsx": "react-jsx",
+    "verbatimModuleSyntax": true,
+    "isolatedModules": true,
+    "noUncheckedSideEffectImports": true,
+    "moduleDetection": "force",
+    "skipLibCheck": true,
+  },
+  "include": ["src/**/*.ts", "tests/**/*.ts", "playwright.config.ts"]
+}
